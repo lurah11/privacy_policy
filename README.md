@@ -1,10 +1,12 @@
-# Privacy Policy
+# AZ_ModestSoft Privacy Policy
 
-Shared privacy policy for these offline Android apps:
+Shared privacy policy for these offline Android apps published by **AZ_ModestSoft**, an independent software developer:
 
 - Arithmadrill
 - BukuMemori
 - Cart Tactics
+
+Privacy contact: **az.modestsoft@gmail.com**
 
 The policy includes disclosures for local device storage, user-initiated exports and backups, Android permissions, Google Play Billing, data deletion, children's privacy, and privacy inquiries.
 
@@ -24,8 +26,6 @@ Use that URL in each app's Google Play Console privacy-policy field and provide 
 
 ## Before publishing
 
-- Confirm that `lurah11` is acceptable as the developer identification. The app names themselves are included in the policy.
-- Consider replacing the GitHub Issues contact mechanism with a dedicated privacy email address.
 - Verify that the apps do not include analytics, advertising, remote crash reporting, cloud synchronization, or another SDK that transmits data.
 - Complete the Google Play Data safety form separately for every app package.
 - Update the policy whenever an app's data practices change.
