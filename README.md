@@ -1,12 +1,14 @@
 # AZ_ModestSoft Privacy Policy
 
-Shared privacy policy for these offline Android apps:
+Shared privacy policy for these offline-first Android apps:
 
-- Arithmadrill
+- ArithmaDrill: Math Exercises
 - BukuMemori
 - Cart Tactics
+- MaenHuruf
+- LastTime Tracker
 
-The policy describes local device storage, optional device permissions, user-initiated exports and backups, Google Play Billing, data deletion, children's privacy, and privacy contact information.
+The policy describes local device storage, optional device permissions, user-initiated exports and sharing, app-specific backup behavior, Google Play Billing, data deletion, children's privacy, and privacy contact information.
 
 Public privacy policy:
 
