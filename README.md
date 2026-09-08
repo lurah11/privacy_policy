@@ -1,17 +1,13 @@
-# AZ_ModestSoft Privacy Policy
+# AZ ModestSoft
 
-Shared privacy policy for these offline-first Android apps:
+The public home of AZ ModestSoft, an independent developer of small offline-first Windows and Android apps and games.
 
-- ArithmaDrill: Math Exercises
-- BukuMemori
-- Cart Tactics
-- MaenHuruf
-- LastTimeTracker
+The site includes:
 
-The policy describes local device storage, optional device permissions, user-initiated exports and sharing, app-specific backup and reminder behavior, local analytics, Google Play Billing, data deletion, children's privacy, and privacy contact information.
+- a responsive Apps and Games catalogue;
+- an About Us page; and
+- the shared privacy policy for AZ ModestSoft products.
 
-Public privacy policy:
-
-https://lurah11.github.io/privacy_policy/
+Current GitHub Pages address: https://lurah11.github.io/privacy_policy/
 
 Contact: az.modestsoft@gmail.com
