@@ -1,0 +1,5 @@
+# Local-only build tooling (not published)
+data/
+scripts/
+docs/
+.claude/

@@ -41,19 +41,21 @@
       </aside>
 
       <article class="policy-content" id="policy-content">
-        <p class="policy-meta"><strong>Effective date:</strong> September 8, 2026<br><strong>Developer:</strong> AZ ModestSoft, an independent software developer<br><strong>Contact:</strong> <a href="mailto:az.modestsoft@gmail.com">az.modestsoft@gmail.com</a></p>
+        <p class="policy-meta"><strong>Effective date:</strong> September 21, 2026<br><strong>Developer:</strong> AZ ModestSoft, an independent software developer<br><strong>Contact:</strong> <a href="mailto:az.modestsoft@gmail.com">az.modestsoft@gmail.com</a></p>
 
-        <div class="policy-summary"><strong>Privacy summary:</strong> Core app features are designed to work offline. User-created content is stored locally on the user's device and is not sent to servers operated by AZ ModestSoft. Internet connectivity may be used for store operations or when the user chooses to continue an action in another app, such as sharing an export. AZ ModestSoft does not sell user data.</div>
+        <div class="policy-summary"><strong>Privacy summary:</strong> Core app features are designed to work offline. User-created content is stored locally on the user's device and is not sent to servers operated by AZ ModestSoft. Internet connectivity may be used for store operations or when the user chooses to continue an action in another app, such as sharing an export. MaenHuruf is the only covered app that uses an analytics service: it sends limited, non-advertising usage and device information to Google Analytics for Firebase, as described in section 3. AZ ModestSoft does not sell user data.</div>
 
         <section id="coverage">
           <h2>1. Apps covered by this policy</h2>
           <p>This Privacy Policy applies to the following applications published by AZ ModestSoft:</p>
           <ul>
-            <li><strong>Expiry Watch</strong></li>
-            <li><strong>ArithmaDrill: Math Exercises</strong></li>
+            <li><strong>Expiry Watch</strong> (Windows)</li>
+            <li><strong>AZ QR Toolkit</strong> (Windows)</li>
+            <li><strong>AZ PDF Toolkit</strong> (Windows)</li>
+            <li><strong>ArithmaDrill: Math Exercises</strong> (Android)</li>
+            <li><strong>Cart Tactics</strong> (Windows and Android)</li>
+            <li><strong>MaenHuruf</strong> (Android, <code>com.maenhuruf.app</code>)</li>
             <li><strong>BukuMemori</strong></li>
-            <li><strong>Cart Tactics</strong></li>
-            <li><strong>MaenHuruf</strong></li>
             <li><strong>LastTimeTracker</strong> (<code>com.azmodestsoft.lasttimetracker</code>)</li>
           </ul>
         </section>
@@ -66,14 +68,21 @@
 
         <section id="collection">
           <h2>3. Information collected or shared by AZ ModestSoft</h2>
-          <p>The apps are designed so that AZ ModestSoft does not collect or receive user-created app content, personal information entered into the apps, precise location, contacts, messages, photos, files, or app-usage analytics.</p>
-          <p>The apps do not sell or share user-created content with advertisers or data brokers. They do not use AZ ModestSoft-operated advertising, analytics, or profiling services.</p>
+          <p>The apps are designed so that AZ ModestSoft does not collect or receive user-created app content, personal information entered into the apps, precise location, contacts, messages, photos, or files. Except for MaenHuruf, as described below, the apps do not collect app-usage analytics.</p>
+          <p>The apps do not sell or share user-created content with advertisers or data brokers. They show no advertising and do not use advertising or profiling services.</p>
+
+          <h3>MaenHuruf and Google Analytics for Firebase</h3>
+          <p>MaenHuruf uses Google Analytics for Firebase, a service provided by Google, to help AZ ModestSoft understand how the app is used in aggregate, for example how many devices open the app, which app versions are in use, and whether updates and purchases work correctly. MaenHuruf uses the service's standard automatic collection and does not send custom analytics events of its own.</p>
+          <p>When the device is online, the Firebase SDK may send Google information such as a Firebase app-instance identifier, app version, device model, operating-system version, device language, approximate country or region derived from the network connection, and automatically recorded events such as first open, session start, engagement time, screen views, app updates, and in-app purchase events.</p>
+          <p>MaenHuruf configures Firebase so that it does <strong>not</strong> collect the Android Advertising ID or the Android ID, and advertising-personalization signals are disabled. The advertising-ID permissions that the Firebase library would otherwise add are removed from the app. MaenHuruf does not send names, words or collections the user creates, images selected from the gallery, backup files, or gameplay answers to Firebase or to AZ ModestSoft.</p>
+          <p>AZ ModestSoft sees this information only as reports in the Firebase console and does not use it to identify individual users or children. Google processes the information under the <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>, and retains it according to the project's Google Analytics data-retention settings. Uninstalling MaenHuruf stops any further collection.</p>
+
           <p class="note">Data handled entirely on the user's device is not available to AZ ModestSoft. Features or third-party services added in a future version will be disclosed in an updated version of this policy and in the applicable store privacy declaration.</p>
         </section>
 
         <section id="permissions">
           <h2>4. Device permissions</h2>
-          <p>Depending on the app and the feature used, an app may request access to device functions such as notifications, files, photos, media, or the camera. Such access is used only to provide the feature requested by the user, for example selecting an image, attaching a file, exporting content, or scheduling a local reminder.</p>
+          <p>Depending on the app and the feature used, an app may request access to device functions such as notifications, files, photos, media, the camera, the clipboard, or a capture of the screen. Such access is used only to provide the feature requested by the user, for example selecting an image, attaching a file, scanning a QR code, exporting content, or scheduling a local reminder.</p>
           <p>Permission choices can be reviewed or changed through the device's system settings. Denying an optional permission may prevent the related feature from working but should not affect unrelated features.</p>
         </section>
 
@@ -95,6 +104,23 @@
 
           <h3>Expiry Watch-specific data behavior</h3>
           <p>Expiry Watch stores document names, expiry or renewal dates, notes, settings, and related records locally in a SQLite database on the user's Windows device. This information is used to organize time-sensitive records and calculate their status. Expiry Watch does not upload these records to AZ ModestSoft or Microsoft Store.</p>
+
+          <h3>Cart Tactics-specific data behavior</h3>
+          <p>Cart Tactics stores gameplay progress locally in a single file inside the app's private storage on the user's Android or Windows device. That file holds completed stage records and best results, the most recently used generated-challenge settings, and whether Advanced Challenge access has been unlocked. The selected interface language, English or Bahasa Indonesia, is stored in the platform's app-settings storage.</p>
+          <p>Cart Tactics does not ask for a name, email address, or account, and stores no free-form text entered by the user. It has no export, share, print, or sign-in feature of its own, so it does not transfer gameplay data to another application.</p>
+          <p>On Android, Cart Tactics leaves the platform's standard app-data backup enabled. Gameplay progress may therefore be included in the backup or device-to-device transfer provided by Android and Google, depending on the user's device and account settings. That service is operated by the platform provider, not by AZ ModestSoft. On Windows, progress stays in the app's local data folder and is removed when the app is uninstalled.</p>
+
+          <h3>AZ QR Toolkit-specific data behavior</h3>
+          <p>AZ QR Toolkit makes no network connections. Codes the user creates and scans are kept in a local history database in the app's data folder, and settings are kept in Windows app settings. History can be switched off, and entries can be deleted individually or all at once. Two-factor authentication secrets (<code>otpauth://</code> codes) are shown once and never saved to history.</p>
+          <p>The camera is used only while the user presses <em>Start camera</em> on the Scan page and is released when scanning stops. Camera frames and screen captures are held in memory only long enough to find a QR code and are never saved or transmitted. The clipboard is read only when the user presses <em>Paste</em> and written only when the user presses <em>Copy</em>. Web addresses found in a QR code are never opened automatically; the app shows the address with safety warnings, and opening it is always the user's choice.</p>
+
+          <h3>AZ PDF Toolkit-specific data behavior</h3>
+          <p>AZ PDF Toolkit opens, edits, converts, and saves documents entirely on the user's PC. Tools such as compression, conversion, comparison, redaction, password protection, and text recognition (OCR, using the recognizer built into Windows) run locally; documents are never uploaded. The app may create temporary working copies of pages in the Windows temporary folder while a task runs and deletes them when they are no longer needed.</p>
+          <p>Passwords typed to open protected PDFs are kept in memory only while the app runs and are never written to disk or saved in session files. The app stores its settings and Premium status in its local data folder. If the app fails unexpectedly, it writes a crash log to that folder; the log stays on the PC, is never sent to AZ ModestSoft, and may contain technical details such as the name or location of a file being worked on. Uninstalling the app removes its data folder.</p>
+
+          <h3>MaenHuruf-specific data behavior</h3>
+          <p>MaenHuruf stores Journey stars, game settings, the selected interface language, and Premium status locally on the device. Premium users can create custom vocabulary collections; words entered by the user and images selected from the device gallery are stored locally, and selected images are cropped and resized on the device. When the user chooses, custom collections can be exported as a ZIP backup through Android's sharing interface or imported through Android's file picker, and a Journey achievement card can be shared as an image. These transfers happen only after the user starts them and chooses a destination.</p>
+          <p>MaenHuruf leaves Android's standard app-data backup enabled, so local game data may be included in the backup or device-to-device transfer provided by Android and Google, depending on the device and account settings. Apart from the Firebase Analytics information described in section 3, MaenHuruf also contacts Google Play to check for app updates and to handle Premium purchases.</p>
         </section>
 
         <section id="purchases">
@@ -104,6 +130,10 @@
           <p>AZ ModestSoft may be able to view limited sales and transaction records made available in a store console, such as the purchased product, order identifier, date, price, currency, country, refund status, or transaction status. This information may be used for customer support, refunds, fraud prevention, accounting, and legal compliance. Payment processing is governed by the platform provider's terms and privacy practices.</p>
           <p>ArithmaDrill uses internet connectivity for Google Play Premium price lookup, purchase, restoration, and ownership reconciliation. Verified Premium access is cached locally so previously verified access and the app's core arithmetic practice, history, and analytics can continue to work offline. ArithmaDrill does not send purchase or entitlement information to an AZ ModestSoft-operated server.</p>
           <p>LastTimeTracker uses internet connectivity only for Google Play Premium price lookup, purchase, restoration, and ownership reconciliation. Google Play provides the localized price displayed by the app. Verified Premium entitlement may be cached locally so the app and previously verified access can continue to work offline. LastTimeTracker does not send activity records, notes, analytics, reminders, purchase details, or entitlement information to an AZ ModestSoft-operated server.</p>
+          <p>Cart Tactics offers a single optional one-time purchase that unlocks Advanced Challenge access. On Android the transaction is handled by Google Play Billing and on Windows by the Microsoft Store. Cart Tactics uses internet connectivity only for that purchase, its restoration, and periodic ownership reconciliation; the rest of the game runs entirely offline. Verified access is cached locally so previously verified access keeps working without a connection, and a failed or offline check never removes access already granted. Cart Tactics does not send gameplay progress, purchase details, or entitlement information to an AZ ModestSoft-operated server.</p>
+          <p>AZ PDF Toolkit offers an optional one-time Premium purchase through the Microsoft Store. When the user views the Premium price, buys or restores Premium, or when the app checks ownership (at start-up and at most about once a day), Windows contacts the Microsoft Store on the app's behalf. The app learns only whether Premium is owned and its price, and caches that status locally so Premium keeps working offline.</p>
+          <p>MaenHuruf offers an optional one-time Premium purchase through Google Play Billing. It uses internet connectivity for the Premium price, purchase, restoration, and ownership checks, and caches verified Premium access locally. Google Analytics for Firebase may record that an in-app purchase occurred, as described in section 3. MaenHuruf does not send payment details or entitlement information to an AZ ModestSoft-operated server.</p>
+          <p>AZ QR Toolkit and Expiry Watch are free and offer no in-app purchases.</p>
           <p>For more information, see the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://privacy.microsoft.com/privacystatement" rel="noopener noreferrer">Microsoft Privacy Statement</a>.</p>
         </section>
 
@@ -122,11 +152,12 @@
         <section id="children">
           <h2>9. Children's privacy</h2>
           <p>Some of the covered apps may be suitable for or used by children. The apps do not knowingly transmit children's personal information or user-created content to AZ ModestSoft. Parents or guardians should supervise children's use of device sharing, export, file-selection, and purchase features.</p>
+          <p>MaenHuruf is designed for children aged 5 to 9. It does not ask for a child's name, email address, or account, shows no advertising, and does not collect the Advertising ID or Android ID. The only information it sends off the device for analytics is the limited, non-advertising usage and device information described in section 3. A parent or guardian with questions, or who wants to request deletion of analytics data, can contact <a href="mailto:az.modestsoft@gmail.com">az.modestsoft@gmail.com</a>.</p>
         </section>
 
         <section id="external">
           <h2>10. External services and links</h2>
-          <p>The apps may interact with operating-system services, Google Play services, or Microsoft Store services when needed for installation, updates, licensing, purchases, or other platform functions. These services are controlled by their respective providers. An app may also open an external link at the user's request; the destination's privacy policy then applies.</p>
+          <p>The apps may interact with operating-system services, Google Play services, or Microsoft Store services when needed for installation, updates, licensing, purchases, or other platform functions. MaenHuruf also uses Google Analytics for Firebase, as described in section 3. These services are controlled by their respective providers. An app may also open an external link at the user's request; the destination's privacy policy then applies.</p>
         </section>
 
         <section id="changes">
