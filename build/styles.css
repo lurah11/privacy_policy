@@ -113,6 +113,16 @@ a.store-badge:hover span, a.store-badge:focus-visible span, .video-link:hover, .
 .site-footer nav { display: flex; gap: 22px; }
 .site-footer nav a:hover { color: var(--ink); }
 
+.analytics-settings { padding: 0; color: inherit; background: none; border: 0; font: inherit; cursor: pointer; }
+.analytics-settings:hover, .analytics-settings:focus-visible { color: var(--ink); text-decoration: underline; }
+.analytics-banner { position: fixed; right: 20px; bottom: 20px; left: 20px; z-index: 100; max-width: 720px; margin: auto; padding: 20px 24px; color: #182234; background: #fff; border: 1px solid #dce1da; border-radius: 14px; box-shadow: 0 18px 55px rgba(0,0,0,.28); }
+.analytics-banner p { margin: 0 0 16px; line-height: 1.5; }
+.analytics-banner a { color: #365a70; text-decoration: underline; }
+.analytics-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.analytics-actions button { padding: 10px 16px; color: #182234; background: #e9ede5; border: 0; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer; }
+.analytics-actions button[data-choice="accepted"] { background: var(--lime); }
+.analytics-actions button:hover, .analytics-actions button:focus-visible { outline: 2px solid #365a70; outline-offset: 2px; }
+
 /* Inner pages */
 .inner-main { overflow: visible; }
 .page-hero { width: min(var(--max),calc(100% - 48px)); margin: 0 auto; padding: clamp(68px,9vw,116px) 0 clamp(58px,8vw,94px); border-bottom: 1px solid var(--line); }

@@ -8,6 +8,7 @@
   <title>Privacy Policy | AZ ModestSoft</title>
   <link rel="icon" type="image/png" href="assets/brand/favicon-64.png">
   <link rel="stylesheet" href="styles.css?v=2">
+  <script defer src="site-analytics.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#policy-content">Skip to policy</a>
@@ -27,6 +28,7 @@
     <div class="policy-layout">
       <aside class="policy-aside" aria-label="Policy contents">
         <p>On this page</p>
+        <a href="#website-analytics">Website analytics</a>
         <a href="#coverage">Apps covered</a>
         <a href="#device-data">Device data</a>
         <a href="#collection">Data collection</a>
@@ -42,9 +44,16 @@
       </aside>
 
       <article class="policy-content" id="policy-content">
-        <p class="policy-meta"><strong>Effective date:</strong> September 23, 2026<br><strong>Developer:</strong> AZ ModestSoft, an independent software developer<br><strong>Contact:</strong> <a href="mailto:az.modestsoft@gmail.com">az.modestsoft@gmail.com</a></p>
+        <p class="policy-meta"><strong>Effective date:</strong> September 28, 2026<br><strong>Developer:</strong> AZ ModestSoft, an independent software developer<br><strong>Contact:</strong> <a href="mailto:az.modestsoft@gmail.com">az.modestsoft@gmail.com</a></p>
 
         <div class="policy-summary"><strong>Privacy summary:</strong> Core app features are designed to work offline. User-created content is stored locally on the user's device and is not sent to servers operated by AZ ModestSoft. Internet connectivity may be used for store operations or when the user chooses to continue an action in another app, such as sharing an export. MaenHuruf is the only covered app that uses an analytics service: it sends limited, non-advertising usage and device information to Google Analytics for Firebase, as described in section 3. AZ ModestSoft does not sell user data.</div>
+
+        <section id="website-analytics">
+          <h2>Website analytics</h2>
+          <p>When website analytics is enabled, Google Analytics 4 loads only if you select <strong>Accept analytics</strong>. Before you accept, the site does not load the Google Analytics tag or send website analytics data to Google. You can decline and continue using the site.</p>
+          <p>After you accept, Google Analytics may receive pages visited, approximate location, browser and device information, and a cookie identifier used to distinguish visits. We use its reports to understand website traffic. We do not send content from our apps to website analytics or use the website tag for advertising personalization. Google describes its data handling in the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+          <p>When analytics is enabled, your choice is saved in this browser and you can use <strong>Analytics settings</strong> in the footer to change it. Declining after accepting stops further analytics collection on this site; cookies already set by Google Analytics may remain until they expire or you clear them in your browser.</p>
+        </section>
 
         <section id="coverage">
           <h2>1. Apps covered by this policy</h2>
@@ -52,6 +61,7 @@
           <ul>
             <li><strong>Expiry Watch</strong> (Windows)</li>
             <li><strong>AZ QR Toolkit</strong> (Windows)</li>
+            <li><strong>AZ Duplicate File Finder</strong> (Windows)</li>
             <li><strong>AZ PDF Toolkit</strong> (Windows)</li>
             <li><strong>ArithmaDrill: Math Exercises</strong> (Android)</li>
             <li><strong>Cart Tactics</strong> (Windows and Android)</li>
@@ -108,6 +118,9 @@
           <h3>Expiry Watch-specific data behavior</h3>
           <p>Expiry Watch stores document names, expiry or renewal dates, notes, settings, and related records locally in a SQLite database on the user's Windows device. This information is used to organize time-sensitive records and calculate their status. Expiry Watch does not upload these records to AZ ModestSoft or Microsoft Store.</p>
 
+          <h3>AZ Duplicate File Finder-specific data behavior</h3>
+          <p>AZ Duplicate File Finder scans folders chosen by the user on the Windows device. It compares files locally and does not upload files or scan results. It stores preferences and the last selected folder locally. When files are deleted, it writes a local log containing technical details including file paths; crash logs may also contain technical details. These logs are not sent to AZ ModestSoft.</p>
+
           <h3>Cart Tactics-specific data behavior</h3>
           <p>Cart Tactics stores gameplay progress locally in a single file inside the app's private storage on the user's Android or Windows device. That file holds completed stage records and best results, the most recently used generated-challenge settings, and whether Advanced Challenge access has been unlocked. The selected interface language, English or Bahasa Indonesia, is stored in the platform's app-settings storage.</p>
           <p>Cart Tactics does not ask for a name, email address, or account, and stores no free-form text entered by the user. It has no export, share, print, or sign-in feature of its own, so it does not transfer gameplay data to another application.</p>
@@ -136,7 +149,7 @@
           <p>Cart Tactics offers a single optional one-time purchase that unlocks Advanced Challenge access. On Android the transaction is handled by Google Play Billing and on Windows by the Microsoft Store. Cart Tactics uses internet connectivity only for that purchase, its restoration, and periodic ownership reconciliation; the rest of the game runs entirely offline. Verified access is cached locally so previously verified access keeps working without a connection, and a failed or offline check never removes access already granted. Cart Tactics does not send gameplay progress, purchase details, or entitlement information to an AZ ModestSoft-operated server.</p>
           <p>AZ PDF Toolkit offers an optional one-time Premium purchase through the Microsoft Store. When the user views the Premium price, buys or restores Premium, or when the app checks ownership (at start-up and at most about once a day), Windows contacts the Microsoft Store on the app's behalf. The app learns only whether Premium is owned and its price, and caches that status locally so Premium keeps working offline.</p>
           <p>MaenHuruf offers an optional one-time Premium purchase through Google Play Billing. It uses internet connectivity for the Premium price, purchase, restoration, and ownership checks, and caches verified Premium access locally. Google Analytics for Firebase may record that an in-app purchase occurred, as described in section 3. MaenHuruf does not send payment details or entitlement information to an AZ ModestSoft-operated server.</p>
-          <p>AZ QR Toolkit and Expiry Watch are free and offer no in-app purchases.</p>
+          <p>AZ QR Toolkit, AZ Duplicate File Finder, and Expiry Watch are free and offer no in-app purchases.</p>
           <p>For more information, see the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://privacy.microsoft.com/privacystatement" rel="noopener noreferrer">Microsoft Privacy Statement</a>.</p>
         </section>
 
@@ -176,7 +189,7 @@
           <p class="note">Do not send passwords, payment-card numbers, private app content, or other unnecessary sensitive information by email.</p>
         </section>
 
-        <p class="policy-end">This policy applies only to the app versions and practices described above. Store privacy and data-safety declarations are completed separately for each app.</p>
+        <p class="policy-end">The app-specific sections apply only to the app versions and practices described above. Store privacy and data-safety declarations are completed separately for each app.</p>
       </article>
     </div>
   </main>
