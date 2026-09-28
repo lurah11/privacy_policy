@@ -58,6 +58,15 @@ h1 em { color: var(--lime); font-style: normal; }
 .section-heading .eyebrow { color: #6c7580; }
 .section-heading h2 { margin-bottom: 0; font-family: var(--display); font-size: clamp(2.6rem,5.5vw,4.8rem); line-height: 1.03; letter-spacing: -.06em; }
 .section-heading > p { max-width: 340px; margin-bottom: 7px; color: #68727f; font-size: 1rem; }
+.support-card { margin: -24px 0 64px; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: #fff; border: 1px solid #dce1da; border-radius: 14px 14px 14px 4px; box-shadow: 0 18px 50px rgba(18,34,52,.06); }
+.support-copy strong { font-family: var(--display); font-size: 1.05rem; letter-spacing: -.02em; }
+.support-copy p { margin: 3px 0 0; color: #616c78; font-size: .92rem; }
+.support-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.support-button { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; font-size: .85rem; font-weight: 600; white-space: nowrap; transition: transform .2s ease, box-shadow .2s ease; }
+.support-button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.support-button:hover, .support-button:focus-visible { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(18,34,52,.12); }
+.support-button.coffee { color: #182234; background: #ffdd57; }
+.support-button.trakteer { color: #fff; background: #be1e2d; }
 .product-group + .product-group { margin-top: 78px; }
 .group-title { margin-bottom: 16px; display: flex; align-items: baseline; justify-content: space-between; }
 .group-title h3 { margin: 0; font-family: var(--display); font-size: 1.35rem; letter-spacing: -.035em; }
@@ -168,6 +177,8 @@ a.store-badge:hover span, a.store-badge:focus-visible span, .video-link:hover, .
   h1 { font-size: clamp(3.25rem,16vw,5rem); }
   .catalog { padding-right: 16px; padding-left: 16px; }
   .section-heading { margin-bottom: 50px; }
+  .support-card { margin: -16px 0 48px; padding: 18px; flex-direction: column; align-items: stretch; }
+  .support-button { flex: 1; justify-content: center; }
   .table-shell { overflow: visible; background: transparent; border: 0; box-shadow: none; }
   table, thead, tbody, tr, th, td { display: block; }
   thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); }
