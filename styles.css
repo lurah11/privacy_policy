@@ -63,7 +63,7 @@ h1 em { color: var(--lime); font-style: normal; }
 .support-copy p { margin: 3px 0 0; color: #616c78; font-size: .92rem; }
 .support-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .support-button { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; font-size: .85rem; font-weight: 600; white-space: nowrap; transition: transform .2s ease, box-shadow .2s ease; }
-.support-button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.support-button svg { width: 16px; height: 16px; flex: 0 0 16px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .support-button:hover, .support-button:focus-visible { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(18,34,52,.12); }
 .support-button.coffee { color: #182234; background: #ffdd57; }
 .support-button.trakteer { color: #fff; background: #be1e2d; }
