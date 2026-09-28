@@ -42,7 +42,7 @@
       </aside>
 
       <article class="policy-content" id="policy-content">
-        <p class="policy-meta"><strong>Effective date:</strong> September 21, 2026<br><strong>Developer:</strong> AZ ModestSoft, an independent software developer<br><strong>Contact:</strong> <a href="mailto:az.modestsoft@gmail.com">az.modestsoft@gmail.com</a></p>
+        <p class="policy-meta"><strong>Effective date:</strong> September 23, 2026<br><strong>Developer:</strong> AZ ModestSoft, an independent software developer<br><strong>Contact:</strong> <a href="mailto:az.modestsoft@gmail.com">az.modestsoft@gmail.com</a></p>
 
         <div class="policy-summary"><strong>Privacy summary:</strong> Core app features are designed to work offline. User-created content is stored locally on the user's device and is not sent to servers operated by AZ ModestSoft. Internet connectivity may be used for store operations or when the user chooses to continue an action in another app, such as sharing an export. MaenHuruf is the only covered app that uses an analytics service: it sends limited, non-advertising usage and device information to Google Analytics for Firebase, as described in section 3. AZ ModestSoft does not sell user data.</div>
 
@@ -102,6 +102,8 @@
           <h3>LastTimeTracker-specific data and reminder behavior</h3>
           <p>LastTimeTracker stores activity names, occurrence dates and times, optional notes, settings, and locally calculated history and analytics in a SQLite database on the user's device. This information is used to show when an activity last occurred, suggest previously recorded activities, calculate typical intervals, identify unusually early or late occurrences, and provide on-device recommendations.</p>
           <p>If the user enables reminders, LastTimeTracker uses Android notifications and scheduled device events to present reminders on the device. It may receive the device boot-completed event so enabled reminders can be scheduled again after a restart. Activity records, notes, analytics, and reminder content are not transmitted to AZ ModestSoft or to an AZ ModestSoft-operated server. Android cloud backup and device-to-device transfer are disabled for LastTimeTracker app data.</p>
+          <p>LastTimeTracker can create a backup file when the user chooses "Back up" in Settings. The file is a copy of the app's local database: activities, occurrence dates and times, notes, scheduled activities, and reminder choices. It does not contain purchase details or Premium status. Android's save dialog lets the user choose where to store the file, such as a folder on the device or a cloud storage provider available on the device. LastTimeTracker does not upload the file itself, and AZ ModestSoft does not receive a copy. The backup file is not encrypted, so the user should keep it somewhere they trust.</p>
+          <p>The user can restore a backup from Settings. LastTimeTracker checks the selected file on the device and asks for confirmation before replacing the app's current data. Premium ownership is restored separately through Google Play.</p>
 
           <h3>Expiry Watch-specific data behavior</h3>
           <p>Expiry Watch stores document names, expiry or renewal dates, notes, settings, and related records locally in a SQLite database on the user's Windows device. This information is used to organize time-sensitive records and calculate their status. Expiry Watch does not upload these records to AZ ModestSoft or Microsoft Store.</p>
@@ -142,6 +144,7 @@
           <h2>7. Data retention and deletion</h2>
           <p>Locally stored app data remains on the user's device until the user deletes it using an in-app function, clears the app's storage through system settings, or uninstalls the app. The exact effect of uninstalling may depend on device backup and restore settings.</p>
           <p>For ArithmaDrill specifically, private app data is excluded from Android cloud backup and device transfer. Clearing its app storage or uninstalling it removes its local profiles, settings, history, and progress without automatic restoration by ArithmaDrill.</p>
+          <p>For LastTimeTracker, clearing app storage or uninstalling the app removes its local database. Backup files that the user created remain wherever the user saved them until the user deletes them.</p>
           <p>The covered apps do not require an AZ ModestSoft-operated account. Therefore, there is no remote account or server-side user-content record for AZ ModestSoft to delete. Store transaction records are retained and managed by the platform provider and may also be retained where required for accounting, fraud prevention, dispute handling, or legal compliance.</p>
         </section>
 
