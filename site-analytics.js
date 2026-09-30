@@ -9,11 +9,12 @@ if (/^G-[A-Z0-9]+$/.test(measurementId)) {
     choice = null;
   }
 
-  const banner = document.createElement('div');
-  banner.className = 'analytics-banner';
-  banner.setAttribute('role', 'region');
-  banner.setAttribute('aria-label', 'Website analytics choice');
-  banner.innerHTML = '<p>May we use Google Analytics to understand visits to this website? It uses cookies after you accept. <a href="privacy.html#website-analytics">Learn more</a>.</p><div class="analytics-actions"><button type="button" data-choice="declined">Decline</button><button type="button" data-choice="accepted">Accept analytics</button></div>';
+  const dialog = document.createElement('dialog');
+  dialog.className = 'analytics-dialog';
+  dialog.setAttribute('aria-labelledby', 'analytics-title');
+  dialog.setAttribute('aria-describedby', 'analytics-description');
+  dialog.innerHTML = '<p class="analytics-label">Your privacy</p><h2 id="analytics-title">Can we use analytics?</h2><p id="analytics-description">Google Analytics helps us understand which pages people visit. It uses cookies only after you accept. You can change your choice at any time. <a href="privacy.html#website-analytics">Read our privacy policy</a>.</p><div class="analytics-actions"><button type="button" data-choice="declined" autofocus>Decline</button><button type="button" data-choice="accepted">Accept analytics</button></div>';
+  document.body.append(dialog);
 
   const settings = document.createElement('button');
   settings.className = 'analytics-settings';
@@ -21,9 +22,8 @@ if (/^G-[A-Z0-9]+$/.test(measurementId)) {
   settings.textContent = 'Analytics settings';
   document.querySelector('.site-footer nav')?.append(settings);
 
-  const showBanner = () => {
-    document.body.append(banner);
-    banner.querySelector('button')?.focus();
+  const showDialog = () => {
+    if (!dialog.open) dialog.showModal();
   };
 
   let loaded = false;
@@ -50,7 +50,7 @@ if (/^G-[A-Z0-9]+$/.test(measurementId)) {
     document.head.append(script);
   };
 
-  banner.addEventListener('click', (event) => {
+  dialog.addEventListener('click', (event) => {
     const selected = event.target.closest('button[data-choice]')?.dataset.choice;
     if (!selected) return;
     try {
@@ -58,7 +58,7 @@ if (/^G-[A-Z0-9]+$/.test(measurementId)) {
     } catch {
       // A private browser mode can block storage; the choice still applies now.
     }
-    banner.remove();
+    dialog.close();
     if (selected === 'accepted') {
       loadAnalytics();
     } else if (loaded) {
@@ -67,7 +67,7 @@ if (/^G-[A-Z0-9]+$/.test(measurementId)) {
     }
   });
 
-  settings.addEventListener('click', showBanner);
+  settings.addEventListener('click', showDialog);
   if (choice === 'accepted') loadAnalytics();
-  else if (choice !== 'declined') showBanner();
+  else if (choice !== 'declined') showDialog();
 }

@@ -110,16 +110,19 @@ a.store-badge:hover span, a.store-badge:focus-visible span, .video-link:hover, .
 .footer-brand { color: var(--ink); font-size: .92rem; }
 .footer-brand .brand-mark { width: 29px; height: 29px; font-size: .65rem; border-radius: 7px 7px 7px 2px; }
 .site-footer p { margin: 0; }
-.site-footer nav { display: flex; gap: 22px; }
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 12px 22px; }
 .site-footer nav a:hover { color: var(--ink); }
 
 .analytics-settings { padding: 0; color: inherit; background: none; border: 0; font: inherit; cursor: pointer; }
 .analytics-settings:hover, .analytics-settings:focus-visible { color: var(--ink); text-decoration: underline; }
-.analytics-banner { position: fixed; right: 20px; bottom: 20px; left: 20px; z-index: 100; max-width: 720px; margin: auto; padding: 20px 24px; color: #182234; background: #fff; border: 1px solid #dce1da; border-radius: 14px; box-shadow: 0 18px 55px rgba(0,0,0,.28); }
-.analytics-banner p { margin: 0 0 16px; line-height: 1.5; }
-.analytics-banner a { color: #365a70; text-decoration: underline; }
+.analytics-dialog { width: min(520px,calc(100% - 32px)); max-height: calc(100dvh - 32px); overflow: auto; padding: clamp(26px,5vw,38px); color: #182234; background: #fff; border: 1px solid #dce1da; border-radius: 18px; box-shadow: 0 24px 70px rgba(0,0,0,.35); }
+.analytics-dialog::backdrop { background: rgba(5,13,28,.72); backdrop-filter: blur(3px); }
+.analytics-dialog .analytics-label { margin: 0 0 10px; color: #536333; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.analytics-dialog h2 { margin: 0 0 16px; font-family: var(--display); font-size: clamp(1.75rem,5vw,2.35rem); line-height: 1.1; letter-spacing: -.04em; }
+.analytics-dialog p:not(.analytics-label) { margin: 0 0 26px; line-height: 1.6; }
+.analytics-dialog a { color: #365a70; text-decoration: underline; }
 .analytics-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-.analytics-actions button { padding: 10px 16px; color: #182234; background: #e9ede5; border: 0; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer; }
+.analytics-actions button { flex: 1 1 170px; padding: 12px 16px; color: #182234; background: #e9ede5; border: 0; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer; }
 .analytics-actions button[data-choice="accepted"] { background: var(--lime); }
 .analytics-actions button:hover, .analytics-actions button:focus-visible { outline: 2px solid #365a70; outline-offset: 2px; }
 
